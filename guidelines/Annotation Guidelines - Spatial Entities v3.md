@@ -55,13 +55,13 @@ Figuren spielen für die Annotation soweit nur für die Zuweisung als Wert für 
 
 ## Literaturverzeichnis
 
-[Dennerlein, Katrin. 2009\. *Narratologie des Raumes*. Narratologia. Berlin, New York: Walter de Gruyter. https://doi.org/10.1515/9783110219920.](https://www.zotero.org/google-docs/?gp46DU)  
-[Glucksberg, Sam. 2001\. *Understanding Figurative Language*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780195111095.001.0001.](https://www.zotero.org/google-docs/?gp46DU)  
-[Lakoff, George, und Mark Johnson. 2011\. *Metaphors We Live by: With a New Afterword*. 6\. print. Chicago, Ill.: Univ. of Chicago Press.](https://www.zotero.org/google-docs/?gp46DU)  
-[Lotman, Juri. 1972\. *Die Struktur literarischer Texte*. Uni-Taschenbücher 103\. München: W. Fink.](https://www.zotero.org/google-docs/?gp46DU)  
-[Ryan, Marie-Laure. 2014\. „Space“. In *the living handbook of narratology*. Hamburg: Hamburg University. https://www-archiv.fdm.uni-hamburg.de/lhn/node/55.html\#Herman2005.](https://www.zotero.org/google-docs/?gp46DU)  
-[Schumacher, Mareike K. 2023\. *Orte und Räume in Romanen*. Digitale Literaturwissenschaft. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-66035-5\_1.](https://www.zotero.org/google-docs/?gp46DU)  
-[Tally, Robert T. 2018\. „The Space of the Novel“. In *The Cambridge Companion to the Novel*, herausgegeben von Eric Bulson, 1\. Aufl., 152–67. Cambridge University Press. https://doi.org/10.1017/9781316659694.011.](https://www.zotero.org/google-docs/?gp46DU)
+Dennerlein, Katrin. 2009\. *Narratologie des Raumes*. Narratologia. Berlin, New York: Walter de Gruyter. https://doi.org/10.1515/9783110219920.  
+Glucksberg, Sam. 2001\. *Understanding Figurative Language*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780195111095.001.0001. 
+Lakoff, George, und Mark Johnson. 2011\. *Metaphors We Live by: With a New Afterword*. 6\. print. Chicago, Ill.: Univ. of Chicago Press. 
+Lotman, Juri. 1972\. *Die Struktur literarischer Texte*. Uni-Taschenbücher 103\. München: W. Fink.
+Ryan, Marie-Laure. 2014\. „Space“. In *the living handbook of narratology*. Hamburg: Hamburg University. https://www-archiv.fdm.uni-hamburg.de/lhn/node/55.html\#Herman2005. 
+Schumacher, Mareike K. 2023\. *Orte und Räume in Romanen*. Digitale Literaturwissenschaft. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-66035-5\_1.
+Tally, Robert T. 2018\. „The Space of the Novel“. In *The Cambridge Companion to the Novel*, herausgegeben von Eric Bulson, 1\. Aufl., 152–67. Cambridge University Press. https://doi.org/10.1017/9781316659694.011.
 
 [^1]:  [https://www.projekt-gutenberg.org/gotthelf/spinne/spinne.html](https://www.projekt-gutenberg.org/gotthelf/spinne/spinne.html) 
 
