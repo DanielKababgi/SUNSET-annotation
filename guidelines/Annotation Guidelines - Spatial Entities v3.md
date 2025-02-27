@@ -1,6 +1,6 @@
 # Guidelines für die Annotation von Non-Named Spatial Entities 
 
-## Version 3
+## Version 0.3
 
 Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Ziel ist es, aus diesen ein semantisches Netzwerk zu erstellen, welches die Raumsemantik in Anlehnung an Juri Lotrman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
 
