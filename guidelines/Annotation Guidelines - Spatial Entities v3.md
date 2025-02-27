@@ -1,8 +1,8 @@
 # Guidelines für die Annotation von Non-Named Spatial Entities 
 
-## Version 0.3
+## Version 0.3.1
 
-Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Ziel ist es, aus diesen ein semantisches Netzwerk zu erstellen, welches die Raumsemantik in Anlehnung an Juri Lotrman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
+Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Ziel ist es, aus diesen ein semantisches Netzwerk zu erstellen, welches die Raumsemantik in Anlehnung an Juri Lotman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
 
 Unter NNSE wird prinzipiell eine konkret räumlich verortbare Einheit verstanden, die nicht ohne Aufwand von einer oder einer kleinen Anzahl an Personen bewegt werden kann. Auch Gegenstände, die für einen bestimmten Platz gedacht sind, fallen hier rein. Beispiele sind: *Baum*, *Kirche*, *Berg*, *Möbel*, *Tischlampe*, *Straße*, *Stadt*. Ausgeschlossen sind Objekte und Gegenstände, die von Personen mitgeführt oder genutzt werden können. Beispiele  für Objekte und Gegenstände sind: *Flasche*, *Werkzeug*, *Besteck*, *Tasche*. Begriffe wie *Landstrich*, *Himmel* oder *Horizont* sind potentiell verortbar und es muss im Detail evaluiert werden, ob die Begriffe in der jeweiligen Textstelle der Definition von NNSE entsprechen.
 
@@ -30,11 +30,13 @@ Für jede Klassen wird eine Definition der einzelnen zulässigen Werte inklusive
 Für eine tiefergehende literarische Analyse sollen drei *categories* von NNSE analysiert werden. Bei diesen handelt es sich um aus der Literaturwissenschaft heraus motivierte diskrete semantische Räume, die es im *setting[^3]* geben kann. Diese sind *urban*, *rural* und *natural*. Zu welcher *category* eine NNSE gehört, ergibt sich aus dem Kontext, in dem sie auftaucht und bestimmt sich darüber, ob viele Strukturen von Menschen errichtet wurden.. Die Beschreibung der *categories*:
 | *category* | Beschreibung und Beispiele |
 |---|---|
-| *urban* | Zu dieser *category* gehören NNSE in einer stark urbanisierten Umgebung, also Groß- und Kleinstädte. Auch Stadt- und Industrieparks und ähnliches fallen darunter. Generell ein Raum, in dem viele menschengemachte Strukturen vorhanden sind. *Der Marktplatz in Berlin war gut besucht.*; *Die Häuser in dem Slum  ragten wie Zähne aus der Stadt.* HIER KOMMT DER KRAM FÜR MOVABLE HIN!!!|
+| *urban* | Zu dieser *category* gehören NNSE in einer stark urbanisierten Umgebung, also Groß- und Kleinstädte. Auch Stadt- und Industrieparks und ähnliches fallen darunter. Generell ein Raum, in dem viele menschengemachte Strukturen vorhanden sind. *Der Marktplatz in Berlin war gut besucht.*; *Die Häuser in dem Slum  ragten wie Zähne aus der Stadt.|
 | *rural* | Zu dieser *category* gehören NNSE in einer schwächer urbanisierten Umgebung, also Dörfer, Agrarflächen und touristisch erschlossene Gebiete (Skigebiet, etc.). In diesem Raum sind mäßig viele menschengemachten Strukturen zu finden. *Die Ernte auf dem Feld war sehr erträglich.*; *Das Bauernhaus stand einsam am Rande des Dorfes.* |
 | *natural* | Zu dieser *category* gehören NNSE in einer kaum urbanisierter Umgebung, wie Waldgebiete, Gebirge, Seen oder Wüsten. Einzelne Gebäude oder Infrastrukturen wie Wanderwege und \-hütten und Ähnliches fallen auch darunter. Menschengemachte Strukturen finden sich hier nur vereinzelt wieder. *Der Bach im Wald ist eiskalt.*; *Vor der einsamen Abtei* *im Wald schauert es mir\!* |
 
-In manchen Fällen ist es nötig zu überprüfen, zu welcher *category* die NNSE gehört. Im Satz *Der Steg der Stadt reicht bis ins Meer* würde *Steg* als *categroy urban* klassifiziert werden, da er von Menschen gebaut wurde und Teil der Stadt ist.
+In manchen Fällen ist es nötig zu überprüfen, zu welcher *category* die NNSE gehört. Im Satz *Der Steg der Stadt reicht bis ins Meer* würde *Steg* als *category urban* klassifiziert werden, da er von Menschen gebaut wurde und Teil der Stadt ist. Bei beweglichen Objekten wie einer Kutsche, die eine Bewegung von A nach B zurücklegen, wird nur dann eine *category* annotiert, wenn im Text expliziert wird, wo der größte Teil dieser Bewegung stattfindet. Bei dem Satz *Die Kutsche fuhr aus Berlin in die Wälder* sind Start- und Endpunkt klar, über den Weg dazwischen ist allerdings nichts bekannt. Lautet der Satz hingegen *Die Kutsche fuhr aus Berlin in die Wälder, wobei die Fahrgäste dabei stundenlang nichts als Äcker und Wiesen zu sehen bekamen* ist eindeutig, wo sich das Objekt die meiste Zeit befand.
+
+(Hier wäre auch die Frage: muss es eindeutig im Text stehen oder kann es auch Fälle geben, in denen sich Leser*innen durch Weltwissen *erschließen* können, welche Bereiche durchquert werden?)
 
 # Language Use
 
