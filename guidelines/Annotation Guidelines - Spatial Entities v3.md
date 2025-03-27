@@ -1,12 +1,12 @@
 # Guidelines für die Annotation von Non-Named Spatial Entities 
 
-## Version 0.3.1
+## Version 0.4.0
 
-Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Ziel ist es, aus diesen ein semantisches Netzwerk zu erstellen, welches die Raumsemantik in Anlehnung an Juri Lotman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
+Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Aus diesen soll ein semantisches Netzwerk zu erstellen werden, welches die Raumsemantik in Anlehnung an Juri Lotman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
 
 Unter NNSE wird prinzipiell eine konkret räumlich verortbare Einheit verstanden, die nicht ohne Aufwand von einer oder einer kleinen Anzahl an Personen bewegt werden kann. Auch Gegenstände, die für einen bestimmten Platz gedacht sind, fallen hier rein. Beispiele sind: *Baum*, *Kirche*, *Berg*, *Möbel*, *Tischlampe*, *Straße*, *Stadt*. Ausgeschlossen sind Objekte und Gegenstände, die von Personen mitgeführt oder genutzt werden können. Beispiele  für Objekte und Gegenstände sind: *Flasche*, *Werkzeug*, *Besteck*, *Tasche*. Begriffe wie *Landstrich*, *Himmel* oder *Horizont* sind potentiell verortbar und es muss im Detail evaluiert werden, ob die Begriffe in der jeweiligen Textstelle der Definition von NNSE entsprechen.
 
-Resultat dieser Annotation ist die Erstellung eines Datensatzes, mit dem entweder dedizierte ML-Classifier trainiert oder der Einsatz von LLMs evaluiert werden können. Als Basis werden fünf Sätze als nukleare Einheit verwendet, die annotiert werden sollen. 
+Resultat dieser Annotation ist die Erstellung eines Datensatzes, mit dem entweder dedizierte ML-Classifier trainiert oder der Einsatz von LLMs evaluiert werden können. Die Annotation funktioniert auf Satzebene.
 
 ## Überblick Guidelines
 
@@ -36,7 +36,20 @@ Für eine tiefergehende literarische Analyse sollen drei *categories* von NNSE a
 
 In manchen Fällen ist es nötig zu überprüfen, zu welcher *category* die NNSE gehört. Im Satz *Der Steg der Stadt reicht bis ins Meer* würde *Steg* als *category urban* klassifiziert werden, da er von Menschen gebaut wurde und Teil der Stadt ist. Bei beweglichen Objekten wie einer Kutsche, die eine Bewegung von A nach B zurücklegen, wird nur dann eine *category* annotiert, wenn im Text expliziert wird, wo der größte Teil dieser Bewegung stattfindet. Bei dem Satz *Die Kutsche fuhr aus Berlin in die Wälder* sind Start- und Endpunkt klar, über den Weg dazwischen ist allerdings nichts bekannt. Lautet der Satz hingegen *Die Kutsche fuhr aus Berlin in die Wälder, wobei die Fahrgäste dabei stundenlang nichts als Äcker und Wiesen zu sehen bekamen* ist eindeutig, wo sich das Objekt die meiste Zeit befand.
 
-(Hier wäre auch die Frage: muss es eindeutig im Text stehen oder kann es auch Fälle geben, in denen sich Leser*innen durch Weltwissen *erschließen* können, welche Bereiche durchquert werden?)
+(Hier wäre auch die Frage: muss es eindeutig im Text stehen oder kann es auch Fälle geben, in denen sich Leser\*innen durch Weltwissen *erschließen* können, welche Bereiche durchquert werden?)
+
+# Container
+
+Hier wird annotiert, ob eine NNSE einen Innenraum oder ob sie einen Außenraum darstellt, wobei zwei weitere Problemfelder \-  das der Grenze und beweglicher Entitäten \- behandelt werden. Die Kategorie *container* orientiert sich an [Dennerlein (2009,  S.71)](https://www.zotero.org/google-docs/?hkQP7m) begrifflich an ihrem Text:   
+“‚Raum‘ \[kann\] als Container \[verstanden werden\], \[in denen\] Räume durch die Merkmale Objekthaftigkeit, Wahrnehmungsunabhängigkeit, Diskretheit, eine Unterscheidung von innen und außen und die Zuordnung von Menschen und Dingen zu ihnen gekennzeichnet sind”.  
+Relevant für die Klassifizierung ist der *Point of View* der Erzählinstanz zum *Setting*. Diese Überlegung basiert auf Schumacher (2003, S. 44), bei der sie theoretische Überlegungen von Husserl und Kant zusammenführt. Figuren spielen für die Annotation soweit nur für die Zuweisung als Wert für *container* eine Rolle, darüber sind sie im Rahmen dieser Annotation irrelevant. 
+
+| *container* | Beschreibung und Beispiel |
+|---|---|
+| *exterior* | Alle NNSE, die nicht nach Dennerlein als Container verstanden werden können, da sie weder objekthaft oder diskret sind. Meistens wird es sich um Außenräume handeln. *Wir überqueren die Straße.*; *Treffpunkt ist an der Kirche\!*; *Sie frühstückten an der Sitzecke im Garten*; *Sie betrachtete ihr neues Haus von der anderen Straßenseite.* |
+| *interior* | Hierbei handelt es sich um gerade unbewegliche NNSE, in die Figuren hinein gehen können und die physisch von dem restlichen *setting* abgetrennt sind. Meistens wird es sich um eine Art Innenraum handeln. *Das Wohnzimmer war ein einziges Chaos.*; *Der Tisch im Esszimmer war voll mit köstlichen Speisen.*; *Der blinde Mönch irrte durch die Burg.* |
+| *threshold* | In Anlehnung an Juri Lotman’s Konzept der Grenze[^6] handelt es sich hier um NNSE, die die Grenze oder Schwelle zwischen *interior* und *exterior* kennzeichnen. *Eine Tür zum Haus stand offen.;* Das *Fenster zum Garten war zerbrochen.* **nicht aber** *Die Tür zum Wohnzimmer stand offen.; Die Dachbodenluke klemmte.* |
+| *moving* | Hierunter fallen NNSE, die sich gerade in Bewegung befinden. In vielen Fällen werden sich die Werte *interior* und *exterior* nur durch die in der Handlung gerade stattfindende Bewegung unterschieden. *Die Kutsche fährt durch den Wald.*; *Das Schiff auf See ist der Witterung ausgesetzt* |
 
 # Language Use
 
@@ -47,18 +60,14 @@ Hier wird die Unterscheidung getroffen, ob ein eigentlicher (*literal*) oder ein
 | *literal* | Konkreter Gebrauch wäre nach Schumacher “konkret lokalisierbare Einheiten.”[^5] Die NNSE wird nicht von ihrem ursprünglichen Bedeutungskontext in einen anderen Kontext übertragen. *Sie betreten die Kirche im Dorf; Sie standen auf dem Weg; Im Wald neben dem Dorf stehen Bäume*  |
 | *figurative* | Figurativer Gebrauch liegt vor, wenn eine NNSE von einem Bedeutungskontext in einen anderen Bedeutungskontext übertragen wird, wobei der neue Kontext auf der ursprünglichen Bedeutung aufbaut. *Lass mal die Kirche im Dorf\!*; *Auf den Weg machen; den Wald vor lauter Bäumen nicht sehen* |
 
-# Container
+Wenn eine NNSE *figurative* gebraucht wird, werden alle anderen Kategorien auch mit *figurativ* gekennzeichnet:
 
-Hier wird annotiert, ob eine NNSE einen Innenraum oder ob sie einen Außenraum darstellt, wobei zwei weitere Problemfelder \-  das der Grenze und beweglicher Entitäten \- behandelt werden. Die Kategorie *container* orientiert sich an [Dennerlein (2009,  S.71)](https://www.zotero.org/google-docs/?hkQP7m):   
-“‚Raum‘ \[kann\] als Container \[verstanden werden\], \[in denen\] Räume durch die Merkmale Objekthaftigkeit, Wahrnehmungsunabhängigkeit, Diskretheit, eine Unterscheidung von innen und außen und die Zuordnung von Menschen und Dingen zu ihnen gekennzeichnet sind”.  
-Figuren spielen für die Annotation soweit nur für die Zuweisung als Wert für *container* eine Rolle, darüber sind sie im Rahmen dieser Annotation irrelevant. 
+	Lass doch mal die <Kirche> im Dorf!
 
-| *container* | Beschreibung und Beispiel |
-|---|---|
-| *exterior* | Alle NNSE, die nicht nach Dennerlein als Container verstanden werden können, da sie weder objekthaft oder diskret sind. Meistens wird es sich um Außenräume handeln. *Wir überqueren die Straße.*; *Treffpunkt ist an der Kirche\!*; *Sie frühstückten an der Sitzecke im Garten* |
-| *interior* | Hierbei handelt es sich um gerade unbewegliche NNSE, in die Figuren hinein gehen können und die physisch von dem restlichen *setting* abgetrennt sind. Meistens wird es sich um eine Art Innenraum handeln. *Das Wohnzimmer war ein einziges Chaos.*; *Der Tisch im Esszimmer war voll mit köstlichen Speisen.* |
-| *threshold* | In Anlehnung an Juri Lotman’s Konzept der Grenze[^6] handelt es sich hier um NNSE, die die Grenze oder Schwelle zwischen *interior* und *exterior* kennzeichnen. *Eine Tür zum Haus stand offen.;* Das *Fenster zum Garten war zerbrochen.* **nicht aber** *Die Tür zum Wohnzimmer stand offen.; Die Dachbodenluke klemmte.* |
-| *moving* | Hierunter fallen NNSE, die sich gerade in Bewegung befinden. In vielen Fällen werden sich die Werte *interior* und *exterior* nur durch die in der Handlung gerade stattfindende Bewegung unterschieden. *Die Kutsche fährt durch den Wald.; Das Schiff auf See ist der Witterung ausgesetzt* |
+`NNSE: Kirche`  
+`|--- Category: figurative`  
+`|--- Container: figurative`  
+`|--- Language Use: figurative` 
 
 ## Literaturverzeichnis
 
