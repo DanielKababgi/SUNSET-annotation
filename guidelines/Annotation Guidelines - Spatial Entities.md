@@ -1,6 +1,6 @@
 # Guidelines für die Annotation von Non-Named Spatial Entities 
 
-## Version 0.4.0
+## Version 0.5.0
 
 Ziel ist es, in literarischen Prosatexten, die ungefähr zwischen 1784 und 1918 veröffentlicht wurden, alle *Non-Named Spatial Entities* (=NNSE) zu annotieren. Aus diesen soll ein semantisches Netzwerk zu erstellen werden, welches die Raumsemantik in Anlehnung an Juri Lotman (1972) widerspiegelt. Wir definieren NNSE wie folgt:
 
@@ -22,7 +22,7 @@ In dem folgenden Beispiel sind *Fabrik* und *Heerstraßen* keine NNSE, da sie ke
 
 	Friedrich Mergel, geboren 1738, war der einzige Sohn eines sogenannten Halbmeiers oder Grundeigentümers geringerer Klasse im Dorfe B. [...]. Das Ländchen, dem es angehörte, war damals einer jener abgeschlossenen Erdwinkel ohne <Fabriken> und Handel, ohne <Heerstraßen>, wo noch ein fremdes Gesicht Aufsehen erregte und eine Reise von dreißig Meilen selbst den Vornehmeren zum Ulysses seiner Gegend machte \[...\]. (Annette von Droste-Hülshoff, Die Judenbuche[^2])
 
-Für jede Klassen wird eine Definition der einzelnen zulässigen Werte inklusive Beispiel gegeben. Generell sind hier alle Beispiele im Kursiv geschrieben und falls diese länger sind, ist die NNSE unterstrichen. Für alle Textstellen ist es möglich, unklare Fälle zu kennzeichnen. Es ist immer möglich, für unbestimmbare Klassen *unclear* einzutragen.
+Für jede Klassen wird eine Definition der einzelnen zulässigen Werte inklusive Beispiel gegeben. Generell sind hier alle Beispiele im Kursiv geschrieben und falls diese länger sind, ist die NNSE unterstrichen. Für alle Textstellen ist es möglich, unklare Fälle zu kennzeichnen. Es ist immer möglich, für unbestimmbare Kategorien *unclear* einzutragen.
 
 # Kategorie 1: *class*
 
@@ -43,17 +43,17 @@ In manchen Fällen ist es nötig zu überprüfen, zu welcher *class* die NNSE ge
 Hier wird annotiert, ob eine NNSE einen Innenraum, einen Außenraum, eine Grenze oder eine beweglicher Entitäten darstellen. Die Kategorie *container* orientiert sich an [Dennerlein (2009,  S.71)](https://www.zotero.org/google-docs/?hkQP7m):   
 “‚Raum‘ \[kann\] als Container \[verstanden werden\], \[in denen\] Räume durch die Merkmale Objekthaftigkeit, Wahrnehmungsunabhängigkeit, Diskretheit, eine Unterscheidung von innen und außen und die Zuordnung von Menschen und Dingen zu ihnen gekennzeichnet sind”. Weiter: "Jeder Raum ist potentiell wieder in einem größeren Raum enthalten, umgekehrt besteht jeder Raum aus diskreten Einzelräumen" (ebd., S. 60). 
 _Objekthaft_ meint, dass Raum gegenständlich ist. _Wahrnehmungsunabhängig_ bennent die Eigenschaft, dass es irrelevant ist, ob Raum gerade durch Sinneseindrücke wahrgenommen wird, da er trotzdem "existiert". Unter _Diskret_ wird die Eigenschaft verstanden, dass Räume sich voneinander abgrenzen lassen. "Die räumliche (territoriale) Welt ist die Summe ihrer diskret begrenzten Raumausschnitte" (Dennerlein 1009, S.58). In dieser Arbeit werden zwei Ebenen von *container* postuliert:
-- Die erste Ebene lässt sich nach Alltagswissen als "außen" beschreiben. Diese Ebene kann eine beliebe Anzahl an NNSE beinhalten, die wiederum selbst *container* sein können
-- Die zweite Ebene lässt sich nach Alltagswissen als "drinnen" beschreiben.
+- Die erste Ebene lässt sich nach Alltagswissen als "außen" beschreiben. Diese Ebene kann eine beliebe Anzahl an NNSE beinhalten, die wiederum selbst *container* sein können (z.B. ein *Haus*, eine *Höhle*, etc.).
+- Die zweite Ebene lässt sich nach Alltagswissen als "drinnen" beschreiben, ist also in irgendeiner Form nach außen abgegrenzt (durch einen Zaun, Wände, etc.). Auch diese Ebene kann eine bliebige Anzahl an NNSE beinhalten, die theoretisch auch eigene *container* sein können (*Schlafzimmer* im *Haus*). Diese *container*, die auf einer theoretischen dritten Ebene verortet werden könnten, werden allerdings in diesem Modell nicht weiter berücksichtigt und inklusive weiterer NNSE als Teil der zweiten Ebene ohne weiterer Unterscheidung betrachtet.
 
-Relevant für die Klassifizierung ist der *Point of View* der Erzählinstanz zum *Setting*. Diese Überlegung basiert auf Schumacher (2003, S. 44), bei der sie theoretische Überlegungen von Husserl und Kant zusammenführt. Figuren spielen für die Annotation soweit nur für die Zuweisung als Wert für *container* eine Rolle, darüber sind sie im Rahmen dieser Annotation irrelevant. 
+Relevant für die Klassifizierung ist der *Point of View* der Erzählinstanz zum *Setting*. Diese Überlegung basiert auf Schumacher (2023, S. 44), bei der sie theoretische Überlegungen von Husserl und Kant zusammenführt. Figuren spielen für die Annotation soweit nur für die Zuweisung als Wert für *container* eine Rolle, darüber sind sie im Rahmen dieser Annotation irrelevant. 
 
 | *container* | Beschreibung und Beispiel |
 |---|---|
-| *exterior* | Alle NNSE, die sich  außerhalb von anderen containern verstanden werden können. Meistens wird es sich um Außenräume handeln. *Wir überqueren die Straße.*; *Treffpunkt ist an der Kirche\!*; *Sie frühstückten an der Sitzecke im Garten*; *Sie betrachtete ihr neues Haus von der anderen Straßenseite.* |
-| *interior* | Hierbei handelt es sich um gerade unbewegliche NNSE, in die Figuren hinein gehen können und die physisch von dem restlichen *setting* abgetrennt sind. Meistens wird es sich um eine Art Innenraum handeln. *Das Wohnzimmer war ein einziges Chaos.*; *Der Tisch im Esszimmer war voll mit köstlichen Speisen.*; *Der blinde Mönch irrte durch die Burg.* |
-| *threshold* | In Anlehnung an Juri Lotman’s Konzept der Grenze[^6] handelt es sich hier um NNSE, die die Grenze oder Schwelle zwischen verschiedenen *container* kennzeichnet. *Eine Tür zum Haus stand offen.;* Das *Fenster zum Garten war zerbrochen.* **nicht aber** *Die Tür zum Wohnzimmer stand offen.; Die Dachbodenluke klemmte.* |
-| *moving* | Hierunter fallen NNSE, die sich gerade in Bewegung befinden. In vielen Fällen werden sich die Werte *interior* und *exterior* nur durch die in der Handlung gerade stattfindende Bewegung unterschieden. *Die Kutsche fährt durch den Wald.*; *Das Schiff auf See ist der Witterung ausgesetzt* |
+| *exterior* | Alle NNSE, die sich  auf der ersten Ebene befinden. Meistens wird es sich um Außenräume handeln. *Wir überqueren die Straße.*; *Treffpunkt ist an der Kirche\!*; *Sie frühstückten an der Sitzecke im Garten*; *Sie betrachtete ihr neues Haus von der anderen Straßenseite.* |
+| *interior* | Hierbei handelt es sich um NNSE, die auf der zweiten Ebene zu verorten sind. Meistens wird es sich um eine Art Innenraum handeln. *Das Wohnzimmer war ein einziges Chaos.*; *Der Tisch im Esszimmer war voll mit köstlichen Speisen.*; *Der blinde Mönch irrte durch die Burg.*, *Die Menschen in der <ins>Höhle</ins> sahen Schatten an den Wänden* |
+| *threshold* | In Anlehnung an Juri Lotman’s Konzept der Grenze[^5] handelt es sich hier um NNSE, die die Grenze oder Schwelle zwischen *containern* kennzeichnen. *Eine <ins>Tür</ins> zum Haus stand offen.; *Das <ins>Fenster</ins> zum Garten war zerbrochen.* |
+| *moving* | Hierunter fallen NNSE, die sich gerade in Bewegung befinden. Sie können sowohl auf der ersten als auch der zweiten Ebene verortet sein. *Die Kutsche fährt durch den Wald.*; *Das Schiff auf See ist der Witterung ausgesetzt* |
 
 ## Literaturverzeichnis
 
@@ -72,10 +72,6 @@ Relevant für die Klassifizierung ist der *Point of View* der Erzählinstanz zum
 
 [^3]:  Zur Definition von *setting*, siehe [Ryan 2014, p.7](https://www.zotero.org/google-docs/?QOMzcY): *Setting: the general socio-historico-geographical environment in which the action takes place. In contrast to spatial frames, this is a relatively stable category which embraces the entire text.* Dies grenzt sich von den sogenannten *spatial frames* ab, die konkrete Orte in der Narrative darstellen. Einen ähnlichen Ansatz verfolgt [Tally 2018](https://www.zotero.org/google-docs/?EUBCrY), S. 154, mit der *story world*, die auch bei Ryan als Begriff fällt, allerdings in einem leicht anderen Kontext. Seine Definition ist “*the area in which events of the novel take place*”. Diese Definition ist allgemeiner,aber auch näher an dem *spatial frame* von Ryan orientiert. 
 
-[^4]: Redepenning (2019) liefert einen guten Überblick über semantische Kategorien von Land und Stadt.
+[^4]: Redepenning (2019) liefert einen guten Überblick über semantische Kategorien von Land und Stadt, die allerdings aus der Kulturwissenschaft und der Geographie entnommen wurden.
 
-[^4]:  Lakoff und Johnson entwickelten 1980 die weite Definition für Metaphern: “*The essence of metaphor is understanding and experiencing one kind of thing in terms of another.*” Sam [Glucksberg (2001, S. 9\)](https://www.zotero.org/google-docs/?7Z45ny) kritisiert diese weite Definition, liefert aber auch eine Definition für eigentlichen und uneigentlichen Sprachgebrauch: “*Literal meaning is basic and has unconditional priority. Implicit in this assumption is a corollary assumption: that literal meaning is unproblematic and is context-free, that is, the literal meanings of expressions remain unchanged regardless of context of use. \[...\] Figurative meaning is derived from the literal and can be discovered by discovering the nature of the substitution of the metaphorical for the literal.*”
-
-[^5]:  Siehe [(Schumacher 2023, S. 65\)](https://www.zotero.org/google-docs/?NQs2O2). Dennerlein (2009, S. 48\) versteht konkreten Raum “sinnlich, anschaulich gegeben”.
-
-[^6]:  Siehe [Lotman (1972)](https://www.zotero.org/google-docs/?QrfU4C)
+[^5]:  Siehe [Lotman (1972)](https://www.zotero.org/google-docs/?QrfU4C)
